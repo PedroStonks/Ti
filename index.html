@@ -9,7 +9,11 @@
 
     <title>Aula1</title>
     <link rel="shortcut icon" href="image/nintendo_logo_icon_147258.icon" type="image/x-icon">
-
+<style>
+    image{
+        max-width: 100%;
+    }
+</style>
 </head>
 <h1>Nintendo</h1> 
 <body>
@@ -19,7 +23,7 @@
 
     <h1>Aula1</h1>
     <p>"Em 1980, após uma tentativa sem sucesso da Nintendo ao fazer um jogo baseado no desenho Popeye, Miyamoto,
-        considerado o pai do Mario, foi então solicitado pela empresa para projetar um novo jogo baseado em suas
+        considerado o pai do Mario, foi então solicitado pela empresa para projetar um novo jogo baseado em suas
         próprias ideias. O resultado disso foi Donkey Kong, em que o personagem "Jumpman" (Mario) tentava salvar a sua
         namorada Pauline do gorila Donkey Kong..".</p>
     <img src="HTML/image/the_super_mario_bros_movie_mario_render_png_by_junior3dsymas_dfou0yz-fullview.png"
@@ -28,55 +32,65 @@
     <!--Tudo colocado aqui dentro será ignorado pela máquina, e você poderá descrever o código para futuras consultas ou manutenção -->
 
     <!-- Lista Ordenada-->
-    <ol>
-        <ol type="i"> <!-- 1 A a I i-->
-            <li> Acordar </li>
-            <li>LIgar para o João</li>
-            <li>Tomar Café</li>
-            <li>Escovar os dentes</li>
-            <li>Ir para o faculdade</li>
-            <li>Almoçar</li>
-            <li>Ir para o trabalho</li>
-            <li>Voltar para casa</li>
-            <li>Jantar</li>
-            <li>Dormir</li>
-        </ol>
-        <!-- Lista Não Ordenada-->
-        <ul type="square"> <!-- disc circle square-->
-            <li> Pão </li>
-            <li>Leite</li>
-            <li>Tomate</li>
-            <li>Alface</li>
-            <li>Manteiga</li>
-            <li>Arroz</li>
-            <li>Feijão</li>
-        </ul>
+    <!--Lista Ordenada-->
 
-        <!-- Listas Mista-->
-        <h2>Meus jogos favoritos</h2>
-        
-            <ul tipe="square">
-                <li>NES</li>
-            </ul>
-            <ul tipe="circle">
-                <li>Mario Bros :3</li>
-                <li>Mario: Lost Levels</li>
-                <li>Ninja Gaiden</li>
-            </ul>
-            <ul type="square">
-                <li>SNES</li>
-            </ul>
-            <ul type="circle"></ul>
-            <li>Donkey Kong</li>
+    <ul type="i">  <!--1 A A I i-->
+    <li>Acordar</li>
+    <li>Pegar o celular pra vê as mensagens</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir para o curso</li>
+    <li>Almoçar</li>
+    <li>Ir para o trabalho</li>
+    <li>voltar para casa</li>
+    <li>Jantar</li>
+    </ul>
+    
+    <!--Lista Não Ordenada-->
+    <ul type="circle"> <!-- disc cirgle square -->
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>tomate</li>
+    <li>Alface</li>
+    <li>Manteiga</li>
+    <li>Arroz</li>
+    <li>Queijo</li>
+    </ul>
+    
+    <!--Listas Mistas-->
+    <h2>Meus jogos favoritos na</h2> 
+    <ul type="square">
+    <li>NES</li></ul>
+    <ul type="circle">
+    <li>Mario Bros</1i>
+    <li>Mario Bros 3</1i>
+    <li>Mario: Lost Level</li>
+    <li>Ninja Gaiden</li>
+    </ul>
+    
+    <ul type="square">
+    <li>SNES</li></ul>
+    <ul type="circle">
+    <li>Mario</li>
+    <li>Donkey Kong</li>
+    </ul>
+    
+    <ul type="square">
+    <li>PlayStation</li></ul>
+    <ul type="circle">
+    <li>Final Fantasy</li>
+    <li>Castlevania</li>
+    </ul>
 
-            <ul type="square">
-                <li>Playstation</li>
-            </ul>
-            <ul type="circle">
-                <li>final Fantasy</li>
-                <li>castlevania</li>
-        </ol>
-        </ul>
+
+    <h1>Imagem resposiva</h1>
+    <picture>
+        <source media="(max-width: 800px)" srcset="HTML/image/R (1).jpg">
+        <source media="(max-width: 1050px)" srcset="HTML/image/Super Mario Bros 2.jpg">
+        <img src="HTML/image/2x1_SuperMarioHub_image1600w.jpg" alt="Imagem flexível">
+    </picture>
+
+
 
         <ul>
             <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a>
@@ -107,73 +121,14 @@
         </vídeo>
 
 
-
-
-
-
-
-
-<img src="image/R.png" alt="" height="300" width="auto"> <br>Mario</br>
-
-<!--Lista Ordenada-->
-<ul type="square">  <!--1 A A I i-->
-<li>Acordar</li>
-<li>Pegar o celular pra vê as mensagens</li>
-<li>Tomar café</li>
-<li>Escovar os dentes</li>
-<li>Ir para o curso</li>
-<li>Almoçar</li>
-<li>Ir para o trabalho</li>
-<li>voltar para casa</li>
-<li>Jantar</li>
-</li></ul>
-
-<!--Lista Não Ordenada-->
-<ul type="circle"> <!-- disc cirgle square -->
-<li>Pão</li>
-<li>Leite</li>
-<li>tomate</li>
-<li>Alface</li>
-<li>Manteiga</li>
-<li>Arroz</li>
-<li>Queijo</li>
-</ul>
-
-<!--Listas Mistas-->
-<h2>Meus jogos favoritos na</h2> 
-<ul type="square">
-<li>NES</li></ul>
-<ul type="circle">
-<li>Mario Bros</1i>
-<li>Mario Bros 3</1i>
-<li>Mario: Lost Level</li>
-<li>Ninja Gaiden</li>
-</ul>
-
-<ul type="square">
-<li>SNES</li></ul>
-<ul type="circle">
-<li>Mario</li>
-<li>Donkеу Kоng</li>
-</ul>
-
-<ul type="square">
-<li>PlayStation</li></ul>
-<ul type="circle">
-<li>Final Fantasy</li>
-<li>Castlevania</li>
-</ul>
-
-<!--Definição-->
-<!--Listas de Definicoes-->
-<dl>
+<ol>
 <dt>HTHL</dt>
 <dd>Linguagem de marcação para a criação do conteudo de um site.</dd>
 <dt>CSS</dt>
 <dd>Linguagem de marcação para a criação do design de um site.</dd>
 <dt>Javascript</dt>
 <dd>linguagem de programação para a criação de interatividade de um site.</dd
-</dl>
+</ol>
 
 
 <p>Você pode acessar o site <a href="https://www.globo.com/" target="_blank" rel="external">clicando aqui</a></p>
