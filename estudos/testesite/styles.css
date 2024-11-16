@@ -1,0 +1,90 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ffcccb;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inicio {
+    background-color: #ffe066;
+}
+
+.sobre {
+    background-color: #ff9ff3;
+    color: white;
+}
+
+.produtos {
+    background-color: #1dd1a1;
+    color: white;
+}
+
+.serviços {
+    background-color: #48dbfb;
+    color: white;
+}
+
+.contato {
+    background-color: #c8d6e5;
+}
+
+/* Rodapé */
+.rodapé {
+    background-color: #222f3e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
