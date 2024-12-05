@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulário</h1>
+    <main>
+        <form action="formulario.php" method="post" autocomplete="on">
+            <fieldset class="fieldsetdadospessoais">
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="inome"> Nome:</label>
+                    <input class="inputdadospessoais" type = "text" name = "nome" id="inome" required maxlength="50" placeholder="Nome Completo" autocomplete="name">
+                </div>
+
+                <br>
+                <div>
+                
+                    <label for="iidade">Idade:</label>
+                    <input class="inputidade" type="number" name="idade" id="iidade" min="18" max="99" placeholder="18 a 99" step="1"><!-- value="5" -->
+                </div>
+
+                <br>
+                <div>
+                    <label for="iemail">E-mail</label>
+                    <input class="inputemail" type="email" name="email" id="iemail" placeholder="e-mail" autocomplete="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="itelefone">Telefone:</label>
+                    <input class="inputtelefone" type="tel" name="telefone" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}\-\d{4}$" required placeholder="(xx)x xxxx-xxxx"> <!-- Expressões Regulares-->
+                </div> 
+                 <br>
+                <div>
+                    <label for="smasc">Masculino</label>
+                    <input type="radio" name="sexo" id="smasc" checked>
+                    
+                    <label for="sfem">Feminino</label>
+                    <input type="radio" name="sexo" id="sfem">
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldsetdatas">
+                <legend>Datas: </legend>
+                <label class="datas" for="imes">Período Letivo:</label>
+                <input type="month" name="mes" id="imes" value="2024-06"><br>
+
+                <br>
+                <label class="datas" for="idia">Dia da prova:</label>
+                <input type="date" name="dia" id="idia" value="2024-06-10"><br>
+                <br>
+                <label class="datas" for="ihora">Horário da prova:</label>
+                <input type="time" name="hora" id="ihora" value="08:00"><br>
+                
+                <br>
+                <label class="datas" for="icor">Cores:</label>
+                <input type="color" name="cor" id="icor" value="000000">
+       
+              
+                <input type="file" name="arquivos" id="iarquivos">
+
+                
+                <label for="iestado">Estados:</label>
+                <select name="estado" id="iestado">
+                    <option value="" selected required>--- Escolha ---</option>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select><br>
+                 <br>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="1stprof">
+                <datalist id="1stprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+                <br>
+                 <br>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="2"></textarea>
+            </fieldset>
+
+
+
+
+
+        </form>
+    </main>
+</body>
+</html>

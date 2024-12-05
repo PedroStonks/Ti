@@ -1,0 +1,30 @@
+.inputdadospessoais{
+   
+    border-radius:10px ;
+
+}
+
+.inputidade{
+    width: 60px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.inputemail{
+    border-radius: 10px;
+}
+
+.inputtelefone{
+    border-radius: 10px;
+}
+
+
+.fieldsetdadospessoais{
+    border-radius: 10px;
+}
+
+
+.fieldsetdatas{
+    border-radius: 10px;
+}
+

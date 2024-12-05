@@ -1,6 +1,6 @@
 *{
-    margin: 7px;
-    padding: 5px;
+    margin: 1px;
+    padding: 10px;
 }
 
 td{
@@ -11,3 +11,18 @@ width: 5px;
 background-color: rgb(90, 89, 89);
 color: rgb(20, 20, 20);
 }
+
+.placeholder{
+    text-align: center;
+    margin: auto;
+}
+tr{
+   border: 1px;
+   text-align: center;
+}
+
+table{
+    width: 1px;
+    height:1px;
+}
+
