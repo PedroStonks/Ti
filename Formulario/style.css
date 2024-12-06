@@ -1,6 +1,7 @@
 .inputdadospessoais{
    
     border-radius:10px ;
+    width: 250px;
 
 }
 
@@ -12,6 +13,7 @@
 
 .inputemail{
     border-radius: 10px;
+    width: 300px;
 }
 
 .inputtelefone{
@@ -21,6 +23,7 @@
 
 .fieldsetdadospessoais{
     border-radius: 10px;
+    
 }
 
 
@@ -28,3 +31,31 @@
     border-radius: 10px;
 }
 
+.fieldsetdadospet{
+    border-radius: 10px;
+}
+
+.inputdadospet{
+    border-radius: 10px;
+    width: 180px;
+}
+
+.inputidadepet{
+    border-radius: 10px;
+    width: 51px;
+}
+
+.iespecie{
+    border-radius: 10px;
+    width: 105px;
+}
+
+.iraca{
+    border-radius: 10px;
+    width: 105px;
+}
+
+.inputracao{
+    border-radius: 10px;
+    width: 140px;
+}
