@@ -58,4 +58,13 @@
 .inputracao{
     border-radius: 10px;
     width: 140px;
+    
+}
+
+body{
+    background-color:aliceblue;
+}
+
+.iperiodoconsumo{
+    border-radius: 10px;
 }
