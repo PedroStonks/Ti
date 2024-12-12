@@ -38,6 +38,7 @@ body {
     justify-content: space-between;
     margin-top: 10px;
     gap: 15px;
+    
 }
 
 .nav-list a {
@@ -45,16 +46,18 @@ body {
     color: white;
     font-weight: bold;
     transition: color 0.3s;
+    
 }
 
 .nav-list a:hover {
-    color: #ffcccb;
+   color: #1b1a1a;
 }
 
 /* Section Styles */
 section {
     padding: 40px 20px;
     text-align: center;
+    
 }
 
 .inicio {
@@ -69,6 +72,7 @@ section {
 .produtos {
     background-color: #1dd1a1;
     color: white;
+    
 }
 
 .serviços {
@@ -87,4 +91,7 @@ section {
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
+}
+p{
+    display: inline-block;
 }
