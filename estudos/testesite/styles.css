@@ -18,6 +18,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 /* Header */
@@ -92,6 +93,15 @@ section {
     padding: 10px 0;
     font-size: 0.9em;
 }
-p{
-    display: inline-block;
+
+.outrosprodutos{
+display: flex;
+max-width: 300px; /* Limita a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 1px solid #ccc; /* Adiciona uma borda leve */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+.texto{
+    max-width: 600px; /* Limita a largura do texto */
 }
