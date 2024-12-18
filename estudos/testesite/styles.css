@@ -95,11 +95,14 @@ section {
 }
 
 .outrosprodutos{
-display: flex;
-max-width: 300px; /* Limita a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border: 1px solid #ccc; /* Adiciona uma borda leve */
-    border-radius: 8px; /* Borda arredondada */
+    text-align: center;
+  background-color: #1dd1a1;
+  width:33%;
+  overflow:auto;
+  width:100%;  
+  display: flex;
+
+
 }
 
 .texto{
