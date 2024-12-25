@@ -1,0 +1,35 @@
+.tabela
+{
+    border: 1px;
+    border-color:green;
+}
+ 
+.tr
+{
+    color: blue;
+    border-radius: 4px;
+}
+.th,td
+{
+    padding: 11px;
+}
+.th
+{
+ 
+    font-weight: bold;
+}
+table,th,td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+ 
+ .tbody
+ {
+    border: 1px;
+    border-radius: 4px;
+    width: 1px;
+    height: 1px;
+
+ }

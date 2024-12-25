@@ -95,16 +95,16 @@ section {
 }
 
 .outrosprodutos{
-    text-align: center;
-  background-color: #1dd1a1;
-  width:33%;
-  overflow:auto;
-  width:100%;  
-  display: flex;
+text-align: left;
+background-color: #1dd1a1;
+
+display: flex;
 
 
 }
+
 
 .texto{
     max-width: 600px; /* Limita a largura do texto */
 }
+
