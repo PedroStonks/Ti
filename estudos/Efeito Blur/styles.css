@@ -1,0 +1,23 @@
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+        width: 100%;
+        max-width: 500px;
+        background-color: blue;
+    }
