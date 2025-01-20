@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.corpo {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('image/paisagem\ praia.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: transparent;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter:blur(0px);
+    overflow: hidden;
+    transition: backdrop-filter 1s;
+}
+
+
+.text  {
+    font-size:medium;
+    color:black;
+    margin-bottom: 1px;
+    position: relative;
+    top: 100px;
+    transition: top 1s;
+}
+.container:hover .text{
+    top: 0;
+    transition: 0.5s;
+
+}
+.container:hover{
+    backdrop-filter: blur(10px);
+}
+
