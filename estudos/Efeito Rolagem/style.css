@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    
+
+body{
+    height: 100vh;
+    background-image: url(Image/pegadas\ azuis.jpg);
+    text-align: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+nav.menu-lateral{
+    width: 40px;
+    height: 100%;
+    background-color:#242e47;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #61c9c3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    z-index: 1000;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+
+
+.bnt-expandir{
+   width: 100%;
+   padding-left: 0px; 
+}
+
+.bnt-expandir > i{
+    color:#d5f1f0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+    border-radius: 13px;
+    border: 100px;
+}
+
+ul li.ativo{
+    background-color: #d5f1f0;
+}
+
+ul li.item-menu:hover{
+    background-color: rgb(107, 110, 110);
+    
+}
+
+
+ul li.item-menu a{
+    color: #d5f1f0;
+    text-decoration:none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 17px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 40px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.info{
+
+    height: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    perspective: 1000PX;
+    font-size: 24px;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.info:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+
+}
+
+.frente,.tras{
+    position: absolute;
+    width: 134%;
+    height: 50%;
+    backface-visibility: hidden;
+    flex: 1 1 calc(33.333% - 10px); /* Tamanho igual em 3 colunas */
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #121313;
+    border-radius: 20px;
+    margin: 20px;
+    top: 0; /* Garante alinhamento vertical */
+    left: 0; /* Garante alinhamento horizontal */
+    
+}
+
+
+.frente{
+    transform: rotateY(0deg); /* Frente visível inicialmente */
+    z-index: 2; /* Mantém a frente acima da parte de trás */
+    padding-top: 10%;
+    background-size: cover;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tras{
+    transform: rotateY(180deg);
+    font-size: 25px;
+    z-index: 1; /* Mantém a parte de trás atrás da frente */
+    justify-content: center;
+}
+
+.banner{
+    background-color: #242e47;
+    max-height: 30%;
+}
+
+.info .flip {
+    margin: 20px; /* Adiciona espaçamento ao redor de cada div.flip */
+}
