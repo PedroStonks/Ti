@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
     
@@ -16,10 +16,10 @@ body{
 }
 
 nav.menu-lateral{
-    width: 40px;
+    width: 53px;
     height: 100%;
     background-color:#242e47;
-    padding: 40px 0 40px 1%;
+    padding:35px 35px 40px 1%;
     box-shadow: 3px 0 0 #61c9c3;
     position: fixed;
     top: 0;
@@ -89,9 +89,14 @@ ul li.item-menu a .icon > i{
     text-align: center;
 }
 
-.info{
+.logo2{
+font-size: 50px;
+}
 
-    height: 100%;
+.info{
+    max-height: 80%;
+    width: 100%;
+    height: 50%;
     padding: 10px;
     border-radius: 25px;
     perspective: 1000PX;
@@ -100,27 +105,56 @@ ul li.item-menu a .icon > i{
     justify-content: center;
     gap: 20px;
     overflow: hidden;
+    margin-top: 6%;
 }
 
-.info:hover .flip{
+.flip1:hover{
     transform: rotateY(180deg);
 }
 
-.flip{
+.flip2:hover{
+    transform: rotateY(180deg);
+}
+
+.flip3:hover{
+    transform: rotateY(180deg);
+}
+
+
+.flip1{
     position: relative;
     transform-style: preserve-3d;
     transition: .7s;
     flex: 1 1 auto;
     width: 100%;
-    height: 100%;
-    transform-origin: center;
+    height: 80%;
+    transform-origin:bottom;
+
+}
+.flip2{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 80%;
+    transform-origin:bottom;
+
+}
+.flip3{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 80%;
+    transform-origin:bottom;
 
 }
 
 .frente,.tras{
     position: absolute;
-    width: 134%;
-    height: 50%;
+    margin-top: 6%;
     backface-visibility: hidden;
     flex: 1 1 calc(33.333% - 10px); /* Tamanho igual em 3 colunas */
     background-color: lightblue;
@@ -128,7 +162,7 @@ ul li.item-menu a .icon > i{
     text-align: center;
     border: 2px solid #121313;
     border-radius: 20px;
-    margin: 20px;
+    margin: 30px;
     top: 0; /* Garante alinhamento vertical */
     left: 0; /* Garante alinhamento horizontal */
     
@@ -136,6 +170,11 @@ ul li.item-menu a .icon > i{
 
 
 .frente{
+    padding-top: 50%;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
     transform: rotateY(0deg); /* Frente visível inicialmente */
     z-index: 2; /* Mantém a frente acima da parte de trás */
     padding-top: 10%;
@@ -145,8 +184,11 @@ ul li.item-menu a .icon > i{
 }
 
 .tras{
+    padding-top: 25%;
+    text-align: center;
+    height: 110%;
     transform: rotateY(180deg);
-    font-size: 25px;
+    font-size: 28px;
     z-index: 1; /* Mantém a parte de trás atrás da frente */
     justify-content: center;
 }
@@ -154,8 +196,39 @@ ul li.item-menu a .icon > i{
 .banner{
     background-color: #242e47;
     max-height: 30%;
+    max-height: 23%;
 }
 
-.info .flip {
+.info .flip1 .flip2 .flip3 {
     margin: 20px; /* Adiciona espaçamento ao redor de cada div.flip */
+}
+
+.lore{
+    min-height: 5%;
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    background-color: #d5f1f0;
+}
+
+.botton{
+    text-align: center;
+    width:12%;
+    margin: 3%;
+    margin-left: 44%;
+    padding: 1%;
+    background-color: chartreuse;
+    border-radius: 20px;
+}
+
+.image{
+    align-items: start;
+    padding: 20px;
+    background-color: #121313;
+    margin-top: 6%;
+    display:flex;
+    text-align: right;
+    color: honeydew;
+    im
+    width: 100px;
 }
