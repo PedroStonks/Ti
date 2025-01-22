@@ -71,9 +71,9 @@ ul li.item-menu a{
     color: #d5f1f0;
     text-decoration:none;
     font-size: 20px;
-    padding: 20px 4%;
+    padding: 90px 4%;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     line-height: 30px;
 }
 
@@ -124,7 +124,7 @@ font-size: 50px;
 .flip1{
     position: relative;
     transform-style: preserve-3d;
-    transition: .7s;
+    transition: .1s;
     flex: 1 1 auto;
     width: 100%;
     height: 80%;
@@ -227,8 +227,9 @@ font-size: 50px;
     background-color: #121313;
     margin-top: 6%;
     display:flex;
-    text-align: right;
+    text-align: center;
     color: honeydew;
-    im
-    width: 100px;
+    width: 100%;
+    size: 50%;
+
 }
