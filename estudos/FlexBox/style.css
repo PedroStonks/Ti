@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+body{
+    background-image: url(Image/escanor.webp);
+    background-size: cover;
+}
+
+header{
+    width: 200px;
+    font-size: 35px;
+    display: block;
+    background-color: transparent;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+
+
+.menu{
+     /*background-color: gray;*/
+     width: 100vw;
+     display: flex;
+}
+
+.menu-lateral{
+    margin:10px;
+    display: flex;
+    flex-direction: column; /*row-reverse column column-reverse EX1 */
+    flex-wrap: nowrap; /*wrap wrap-reverse nowrap*/
+    /* flex-flow: row nowrap; */
+    justify-content: flex-start; /* flex-end center space-between space-around Hori */ 
+    /* align-items: center; /*stretch center flex-start flex-end baseline  Vertical*/
+    width: 15vw;
+    border: none;
+}
+
+
+.textolateral{
+    color: white;
+    padding: 5px;
+}
+
+.itens{
+    text-align: center;
+    /*flex-grow:3;*/
+    /*flex-shrink:5;*/
+    /*flex-basis:auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgmenu{
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    margin: 3px;
+}
+
+.itens:hover{
+    opacity: 50%;
+}
+
+section:hover{
+    opacity: 100%;
+    filter:grayscale(0);
+}
+
+
+
+
+
