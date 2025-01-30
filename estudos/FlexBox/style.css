@@ -26,41 +26,49 @@ header{
 }
 
 .menu-lateral{
-    width: 5%;
+    margin-left: 1%;
+    width: 12%;
     backdrop-filter: blur(10px);
-    padding:10px 80px 30px 1%;
     box-shadow: 3px 0 0 #61c9c3;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
+
 .itens-menu-lateral{
-    /*display: flex;
-    /*row-reverse column column-reverse EX1 */
-    /* flex-wrap: nowrap; /*wrap wrap-reverse nowrap*/
-    /* flex-flow: row nowrap; */
-    /*justify-content: flex-start; /* flex-end center space-between space-around Hori */ 
-    /* align-items: center; /*stretch center flex-start flex-end baseline  Vertical*/
-    border: none;
+    display: flex;
+
+    width: 90%;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
 }
 
 .textolateral{
-    display: flex;
-    background-color: rgb(9, 130, 236);
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(9, 130, 236);    
 }
 
 .imgmenu{
     width: 50px;
     height: 50px;
     border-radius: 150px;
-    margin: 3px;
 }
+
+/**************************************************************************************************/
 
 .galeria{
     display: flex;
     flex-flow: row wrap;
-    width:95%;
-    background-color: blue;
+    justify-content: space-around;
+    width:85%;
     padding: 3%;
 }
 
@@ -71,12 +79,20 @@ section{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 300px;
 }
 
 .anime-nome{
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-style: italic;
     font-size: 20px;
+}
+
+.imagemGaleria{
+    width: 98%;
+    height: 500px;
 }
 
 
