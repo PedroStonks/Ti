@@ -7,68 +7,46 @@
 
 body{
     background-image: url(Image/escanor.webp);
-    background-size: auto;
-    flex-flow: row;
-    
+    background-size: auto; 
 }
 
 header{
-    width: 200px;
     font-size: 35px;
-    display: block;
     background-color: transparent;
-    width: 100vw;
     text-align: center;
     color: white;
     backdrop-filter: blur(20px);
     padding: 10px;
 }
 
-
-.menu{
-    width: 3%;
-    height: 100%;
-    backdrop-filter: blur(10px);
-    padding:10px 80px 30px 1%;
-    box-shadow: 3px 0 0 #61c9c3;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: .2s;
-    z-index: 1000;
-}
-
-.menu:hover{
-    width: 300px;
-    z-index: 1000px;
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .menu-lateral{
-    margin:1px;
+    width: 5%;
+    backdrop-filter: blur(10px);
+    padding:10px 80px 30px 1%;
+    box-shadow: 3px 0 0 #61c9c3;
     display: flex;
-    flex-direction: column; /*row-reverse column column-reverse EX1 */
-    flex-wrap: nowrap; /*wrap wrap-reverse nowrap*/
-    /* flex-flow: row nowrap; */
-    justify-content: flex-start; /* flex-end center space-between space-around Hori */ 
-    /* align-items: center; /*stretch center flex-start flex-end baseline  Vertical*/
-    width: 1%;
-    border: none;
+    flex-direction: column;
 }
 
-
+.itens-menu-lateral{
+    /*display: flex;
+    /*row-reverse column column-reverse EX1 */
+    /* flex-wrap: nowrap; /*wrap wrap-reverse nowrap*/
+    /* flex-flow: row nowrap; */
+    /*justify-content: flex-start; /* flex-end center space-between space-around Hori */ 
+    /* align-items: center; /*stretch center flex-start flex-end baseline  Vertical*/
+    border: none;
+}
 
 .textolateral{
     display: flex;
     background-color: rgb(9, 130, 236);
-    
-}
-
-.itens{
-    text-align: center; 
-    
-    justify-content: center;
-    align-items: center;
 }
 
 .imgmenu{
@@ -78,36 +56,27 @@ header{
     margin: 3px;
 }
 
-.main-img{
-    margin-right: 1px;
-    margin-left: 6%;
-    width:60%;
+.galeria{
     display: flex;
-    padding: 3%;
-    flex-flow: nowrap;
-    
-}
-
-.section{
-    row-gap: 10px;
-    flex: 1 1 calc(33.333% - 10px);
-    padding: 30px;
-    top: 0; /* Garante alinhamento vertical */
-    left: 0; /* Garante alinhamento horizontal */
-    margin: 10%;
     flex-flow: row wrap;
-
-
+    width:95%;
+    background-color: blue;
+    padding: 3%;
 }
 
-.section1{
-    margin: 3%;
+section{
+    background-color: red;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .anime-nome{
     font-style: italic;
     font-size: 20px;
-    text-align: center;
 }
 
 
