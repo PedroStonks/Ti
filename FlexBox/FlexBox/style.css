@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+body{
+    background-image: url(Image/escanor.webp);
+    background-size: auto; 
+}
+
+header{
+
+    font-size: 35px;
+
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+}
+
+.Banner h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    text-align: center;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu-lateral{
+    margin-left: 1%;
+    width: 12%;
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 0 0 #61c9c3;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.itens-menu-lateral{
+    display: flex;
+
+    width: 90%;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    height: 150px;
+}
+
+.textolateral{
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(9, 130, 236);    
+}
+
+.imgmenu{
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    justify-content: center;
+
+}
+
+/**************************************************************************************************/
+
+.galeria{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width:85%;
+    padding: 3%;
+
+
+}
+
+section{
+    background-color: red;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+}
+
+.anime-nome{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+.imagemGaleria{
+    width: 98%;
+    height: 500px;
+}
+
+
