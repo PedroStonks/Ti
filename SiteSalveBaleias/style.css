@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Caveat:wght@400..700&family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-image: url(image/image.png);
+    background-size: cover;
+    background-repeat: repeat;
+ 
+}
+
+
+
+header {
+
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'Caveat';
+}
+
+.menu {
+    backdrop-filter: blur(10px);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+.menu a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+
+.item-menu {
+    position: relative; /* Necessário para o posicionamento do tooltip */
+    font-size: 20px;
+    margin-left: 7%;
+
+}
+
+.item-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+/* Estilo do tooltip */
+.item-menu::after {
+    content: attr(data-tooltip); /* O conteúdo do tooltip */
+    position: absolute;
+    left: 50%;
+    bottom: -40px; /* Ajuste para não sobrepor o texto */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Quando o mouse passa por cima, o tooltip aparece */
+.item-menu:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* From Uiverse.io by alexruix */
+.group {
+
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    margin-left: 1%;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.input::placeholder {
+    color: #9e9ea7;
+}
+
+
+input:hover {
+    outline: none;
+    border-color: rgba(234, 76, 137, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* Ajuste a altura conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; /* Permite que os elementos dentro quebrem linha */
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+
+
+}
+
+.Banner h2 {
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.img-banner {
+    width: 100%;
+    height: 730px;
+    border-radius: 20px;
+}
+
+.conteudo{
+
+    display: flex;
+    flex-direction: column; /* Padrão para telas menores */
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.text1{
+    background-color: #f3f3f483;
+    color: rgb(61, 61, 61);
+
+    padding: 20px;
+    padding-left: 1px;
+    border-radius: 10px;
+    max-width: 90%; /* Ajusta para telas menores */
+    width: 100%;
+    margin: 5% auto;
+    text-align: justify;
+}
+
+h3{
+    font-size: 28px;
+    margin-left: 5%;
+}
+
+p{
+    font-size: 24px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 5%;
+   
+}
+
+.image-lateral {
+
+    margin-top: 4%;
+    width: 98%; /* Para telas menores */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.image-lateral img{
+
+    margin-top: 2%;
+    width: 90%; /* Para telas menores */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+    
+}
+
+.image-lateral2 img{
+    margin-left: 8%;
+    margin-top: 3%;
+    width: 85%; /* Para telas menores */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+    
+}
+
+@media (max-width: 575.56px) {
+    .Banner {
+        display: flex;
+        flex-direction: column; /* Coloca o h2 e a imagem em coluna */
+        align-items: center;
+        text-align: center; /* Centraliza o texto */
+        padding: 20px;
+    }
+
+    .Banner h2 {
+        background-color: #3636366b;
+        top: 80%;
+        font-size: 34px; /* Reduz o tamanho da fonte */
+        max-width: 90%; /* Impede que o texto fique muito largo */
+        line-height: 1.5; /* Aumenta o espaçamento para melhor leitura */
+        word-break: break-word;
+        white-space: normal;
+    }
+
+    .img-banner {
+        width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+        max-width: 800px; /* Define um tamanho máximo para a imagem */
+        margin-top: 10px; /* Dá um espaço entre o texto e a imagem */
+    }
+}
+
+
+@media (max-width: 575.56px) {
+    
+    .item-menu{
+        align-items: center;
+        margin-right: 20%;
+    }
+    .menu {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+        
+    }
+
+    .group {
+        width: 100%; /* Garante que o input ocupe toda a largura */
+        max-width: 300px; /* Define um limite para não ficar muito largo */
+        margin-top: 10px; /* Dá um espaço entre o menu e o campo de pesquisa */
+    }
+
+    .input {
+        width: 100%; /* Faz com que o input preencha o container */
+    }
+}
+
+
+
+
+
+
+
+/*Ajuste para os itens do menu ficarem ajustados bem em telas menores como de celulares*/
+@media (max-width: 575.56px) {
+    .menu{
+        margin-left: 10%;
+    }
+
+}
+
+
+
+/* Ajuste para telas maiores (768px ou mais) */
+@media (min-width: 768px) {
+    
+    .conteudo {
+        flex-direction: row; /* Alinha texto e imagem lado a lado */
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .text1 {
+        max-width: 50%; /* Reduz a largura do texto */
+        margin-left: 5%;
+    }
+
+    .image-lateral {
+        width: 40%; /* Define um tamanho fixo para a imagem lateral */
+        
+        margin-left: 2%;
+
+    }
+}
+
+.img-itens{
+    height: 500px;
+    border-radius: 20px;
+}
+
+.conteudo2{
+    flex-direction: column;
+    margin-top: 1px;
+    display: flex;
+
+}
+
+.text2{
+    background-color: #f3f3f483;
+    color: rgb(61, 61, 61);
+    padding: 20px;
+    padding-left: 0.1%;
+    border-radius: 10px;
+    width: 100%; /* Permite que o elemento ocupe toda a largura disponível */
+    max-width: 80%; /* Define um limite para evitar que fique muito largo */
+    margin: 0 auto; /* Centraliza o texto */
+    text-align: justify;
+}
+
+
+
+
+
+
+.img-itens2{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+
+
+}
+
+/* Ajuste para telas maiores (768px ou mais) */
+@media (min-width: 768px) {
+    .conteudo2 {
+        flex-direction: row; /* Alinha texto e imagem lado a lado */
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .text2 {
+        max-width: 80%; /* Reduz a largura do texto */
+        margin-left: 5%;
+    }
+
+    .image-lateral2 {
+        width: 80%; /* Define um tamanho fixo para a imagem lateral */
+        margin-top: 1%;
+        
+        margin-left: 10%;
+    }
+}
+
+
