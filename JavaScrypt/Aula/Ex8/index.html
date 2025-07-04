@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Velocidade do carro</title>
+</head>
+<body>
+
+    <script>
+        let Velocidade = prompt("Digite a velocidade da via")
+        let VelocidadePermitida = 40
+        let VelocidadeMulta = 80
+        let VelocidadeMultaCassaçao = 120
+
+
+        if (Velocidade <= 40){
+            window.alert('Está na velocidade permitada da via Stonks ' + Velocidade)
+        }else if(Velocidade > VelocidadePermitida && Velocidade < VelocidadeMultaCassaçao){
+            window.alert('Você atingiu a velocidade permitida então perdeu playboy ' + Velocidade)
+        }else 
+        {
+            window.alert('Já era deitou sua carteira está sendo cassada ' + Velocidade)
+        }
+
+
+    
+    </script>
+    
+</body>
+</html>

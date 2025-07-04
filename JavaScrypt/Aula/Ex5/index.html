@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let nome = window.prompt('Digite seu nome?');
+        //alert("Seu nome possui " +nome.length+ " letras") //Atributo utilizado para contar os caracteres do objeto selecionado
+        //document.write(`eu ${nome} em letras maiusculas:<strong> ${nome.ToUperCase()}</strong>`)//Método/Função para colocar todo o valor em CAIXA ALTA
+        //document.write(`<br/>Seu${nome} em letras minusculas: <strong>${nome.toLowerCase()}</strong>`)//Método/Função para colocar todo o valor em Minúsculo 
+        //Marcolet nome = "Testando"
+
+        let segundos = prompt("Digite os segundo")
+        let n1 = 3600 |0 //Cada hora vale 3600 segundos
+        let n2 = (segundos - (n1 *3600)) / 60 | 0//Para minutos
+        let n3 = (segundos % 60) | 0//Para segundos
+        
+        alert (`Entrada(${segundos}s) corresponde a: ${n1} horas ${n2} minutos ${n3} segundos`)
+    </script>
+    
+</body>
+</html>

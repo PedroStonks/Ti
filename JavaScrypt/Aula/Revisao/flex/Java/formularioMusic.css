@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0f0f0f;
+}
+ 
+h1 {
+    text-align: center;
+    color: #f1ecec;
+}
+ 
+form {
+    color: aliceblue;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(53, 53, 53, 0.486);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+ 
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+ 
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #89068d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+ 
+button:hover {
+    background-color: #5917a4;
+}
+ 
+a {
+    color: #89068d;
+}
+ 
+a:hover {
+    text-decoration: underline;
+}
+
+.endereço{
+    color: aliceblue;
+    text-align: center;
+}
+
+.email{
+    color: aliceblue;
+    text-align: center;
+}
+ 

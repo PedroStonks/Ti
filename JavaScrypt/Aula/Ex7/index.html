@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ElementBy-QueryBy</title>
+</head>
+<body>
+    <main>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">1</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">2</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">3</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">4</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">5</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">6</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">7</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">8</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">9</div>
+    <div id="div1" onclick = "clicar()" onmouseenter="Entrar()" onmouseout="Sair()">10</div>
+    </main>
+
+
+
+
+    <script>
+        let fundo = window.document.getElementById("fundo")
+        fundo.style.background = "gray"
+
+        let p1 = document.getElementsByTagName("p")[0]
+        p1.style.color = "white"
+
+        let p2 = document.getElementById("senha")
+        p2.innerHTML = "<strong>123</strong>"
+        p2.style.color = "white"
+
+        let p3 = document.getElementsByClassName("email")[0]
+        p3.style.color = "green"
+
+        let p4 = document.getElementsByName("idade")[0]
+        p4.style.color = "red"
+
+        let p5 = document.querySelector("p#info")
+        p5.style.color = "blue"
+        
+        document.write("<br>" + p5)
+
+
+
+        function clicar(){
+           a.innerText = 'Clicou!'
+           a.style.background = 'red'
+        }
+
+        function Entrar(){
+
+        }
+
+        function Sair(){
+
+        }
+
+    </script>
+
+</body>
+</html>

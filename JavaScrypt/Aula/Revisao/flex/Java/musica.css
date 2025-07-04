@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    
+
+body{
+    height: 100vh;
+    background-color: #0d0d0e;
+    text-align: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+
+header{
+    display: flex;
+    justify-self: start;
+    margin: 2.5%;
+    
+}
+
+
+.Logo-header{
+    background-color: #89068d;
+    flex-wrap: wrap;
+
+}
+
+.icon-header{margin-right: 150%;
+    display: inline-flex;
+    justify-self: flex-start;
+    background-color: #f7fafa;
+    flex-wrap: wrap;
+}
+
+
+p{
+    font-size: 24px;
+}
+
+
+nav.menu-lateral{
+    width: 30px;
+    height: 100%;
+    background-color:#0f0f0f;
+    padding: 45px 35px 0px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+    z-index: 1000;
+}
+
+
+.menu-lateral.expandido {
+    width: 200px;
+    transition: width 0.3s;
+}
+
+.menu-lateral .txt-link {
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.menu-lateral.expandido .txt-link {
+    display: inline;
+}
+
+
+
+.bnt-expandir{
+   width: 100%;
+   padding-left: 0px; 
+}
+
+.bnt-expandir > i{
+    color:#f1f3f3;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+    border-radius: 13px;
+    border: 100px;
+}
+
+ul li.ativo{
+    background-color: #f9fafa;
+
+}
+
+ul li.item-menu:hover{
+    background-color: rgb(107, 110, 110);
+    border-radius: 20px;
+}
+
+
+ul li.item-menu a{
+    color: #f7fafa;
+    text-decoration:none;
+    font-size: 20px;
+    padding: 40px 4%;
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 17px;
+}
+
+ul li.item-menu a .Icon > i{
+    font-size: 25px;
+}
+
+
+
+
+.genero{
+    display: inline;
+    justify-content: center;
+}
+.genero button {
+    margin: 5px 10PX;
+    padding: 8px 6px;
+    border: none;
+    border-radius: 15px;
+    background-color: #89068d;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.genero button:hover {
+    background-color: #5917a4;
+}
+
+  
+
+
+.swiffy-slider{
+    padding: 0%;
+    margin-top: 1%;
+    margin: 5%;
+
+    --swiffy-slider-item-count: 3;
+    --swiffy-slider-item-gap: 1rem;
+    --swiffy-slider-animation-duration: 0.5s;
+    --swiffy-slider-nav-zoom: 10.2;
+}
+
+.img-slider{
+    display: inline-flex;
+    max-width: 30%;
+    max-height: 20%;
+    border-radius: 10px;
+
+}
+
+.caption{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #4b4949bd;
+        color: #f7fafa;
+        padding: 6px 12px;
+        border-radius: 10px;
+        font-size: 14px;
+    
+}
+
+
+.slider-nav{
+    color: #5917a4;
+
+}
+
+
+.slider-nav-next{
+color: #89068d;
+}
+
+
+/*-----------------------------------------*/
+
+/* Celulares até 768px */
+@media (max-width: 768px) {
+    nav.menu-lateral {
+        width: 60px;
+        padding: 20px 10px;
+    }
+
+    nav.menu-lateral.expandido {
+        width: 200px;
+    }
+
+    .menu-lateral .txt-link {
+        display: none;
+    }
+
+    .menu-lateral.expandido .txt-link {
+        display: inline;
+    }
+
+    .bnt-expandir {
+        padding-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    .genero {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .genero button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .img-slider {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .caption {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+}
+
+/* Telas maiores: desktops/laptops */
+@media (min-width: 769px) {
+    .menu-lateral {
+        width: 80px;
+    }
+
+    .menu-lateral.expandido {
+        width: 220px;
+    }
+
+    .img-slider {
+        max-width: 30%;
+    }
+
+    .caption {
+        max-width: 5%;
+    }
+}

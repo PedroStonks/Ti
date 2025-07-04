@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Desafio Final</title>
+</head>
+<body>
+
+<header class="bnt-expandir">
+    <i class="bi bi-fuel-pump"></i>
+    <span class="txt-link">Tanque Cheio</span>   
+</header>
+<br>
+<nav class="menu-lateral">
+    <ul>
+        <li class="item-menu">
+            <a href="#">
+                <span class="Icon"><i class="bi bi-calculator"></i>
+                </span> 
+                <span class="txt-link">Calcular</span>                   
+            </a> 
+        </li>
+        <li class="item-menu">
+            <a href="https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular">
+                <span class="Icon"><i class="bi bi-gear-wide-connected"></i>
+                </span> 
+                <span class="txt-link">Configurações</span>                   
+            </a>
+        </li>  
+    </ul>
+</nav>
+
+<main class="container">
+    <h1>Calculadora de Combustível</h1>
+    <p>Digite abaixo o valor do combustível (R$ por litro):</p>
+    
+    <label for="valor-combustivel">Valor (R$/L):</label>
+    <input type="number" id="valor-combustivel" name="valor-combustivel" step="0.01" required>
+
+    <label for="litros">Quantidade de Litros:</label>
+    <input type="number" id="litros" name="litros" step="0.01" required>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <form action="/action_page.php">
+        <p>Selecione seu Combustivel:</p>
+
+      <label for="html">Gasolina</label><br>
+     <input type="radio" id="Gasolina" name="fav_combustivel" value="Gasolina">
+     <label for="Gasolina">Etanol</label><br>
+    <input type="radio" id="Etanol" name="fav_combustivel" value="Etanol">
+     <label for="Etanol">JavaScript</label>
+
+
+
+    <select name="Escolha" id="select">
+        <option value="" disabled selected>selecione um valor </option>
+        <option value="0.65">65%</option>
+        <option value="0.66">66%</option>
+        <option value="0.67">67%</option>
+        <option value="0.68">68%</option>
+        <option value="0.69">69%</option>
+        <option value="0.70">70%</option>
+        <option value="0.71">71%</option>
+        <option value="0.72">72%</option>
+        <option value="0.73">73%</option>
+        <option value="0.74">74%</option>
+        <option value="0.75">75%</option>
+       
+     </select>
+
+
+
+
+</main>
+
+<script src="scrypt.js"></script>
+
+
+</body>
+</html>
